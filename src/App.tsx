@@ -27,6 +27,7 @@ import {
   Library
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { cn } from './lib/utils';
 import { HOOK_CATEGORIES, HOOKS, SMART_INSERTS, EXAMPLES } from './constants';
 import { HookCategory, Hook, ScriptSection, ExampleScript } from './types';
@@ -1063,6 +1064,7 @@ export default function App() {
         setActiveTab(tab);
         setSelectedCategory(null);
       }} />
+      <SpeedInsights />
     </div>
   );
 }
